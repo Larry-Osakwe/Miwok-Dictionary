@@ -42,7 +42,7 @@ public class PhrasesActivity extends AppCompatActivity {
         words.add(new Word("Come here.", "әnni'nem"));
 
         //Create an ArrayAdapter whose data source is a list of Strings.
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_phrases);
 
         //Find the ListView object in the view hierarchy of the Activity
         ListView listView = (ListView) findViewById(R.id.list);
