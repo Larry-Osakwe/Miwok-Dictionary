@@ -78,7 +78,7 @@ public class ColorsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        mAudioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
+        mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         //Create list of words
         final ArrayList<Word> words = new ArrayList<Word>();

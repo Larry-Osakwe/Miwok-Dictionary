@@ -1,7 +1,6 @@
 package com.example.android.miwok;
 
 import android.app.Activity;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,13 +40,13 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // Find the TextView in the list_item.xml layout with the ID version_name
         // Get the version name from the current Word object and
         // set this text on the name TextView
-        TextView miwokWord = (TextView) listItemView.findViewById(R.id.miwok_word);
+        TextView miwokWord = (TextView) listItemView.findViewById(R.id.miwok_text_view);
         miwokWord.setText(currentWord.getMiwokWord());
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         // Get the version name from the current Word object and
         // set this text on the name TextView
-        TextView defaultWord = (TextView) listItemView.findViewById(R.id.english_word);
+        TextView defaultWord = (TextView) listItemView.findViewById(R.id.default_text_view);
         defaultWord.setText(currentWord.getDefaultWord());
 
         // Find the ImageView in the list_item.xml layout with the ID version_name

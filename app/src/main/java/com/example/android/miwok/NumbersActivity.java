@@ -28,7 +28,6 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import static android.media.AudioManager.AUDIOFOCUS_GAIN_TRANSIENT;
-import static android.media.AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK;
 import static android.media.AudioManager.AUDIOFOCUS_LOSS;
 import static android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT;
 import static android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK;
@@ -78,7 +77,7 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        mAudioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
+        mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         //Create list of words
         final ArrayList<Word> words = new ArrayList<Word>();
@@ -102,7 +101,6 @@ public class NumbersActivity extends AppCompatActivity {
 
         //Make the ListView use the ArrayAdapter created above
         listView.setAdapter(adapter);
-
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
